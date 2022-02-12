@@ -6,28 +6,12 @@
 /*   By: eyohn <sopka13@mail.ru>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/08 22:33:25 by eyohn             #+#    #+#             */
-/*   Updated: 2022/02/10 22:14:48 by eyohn            ###   ########.fr       */
+/*   Updated: 2022/02/12 09:47:33 by eyohn            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_prepare(){
-	// Prepare data for server
-	// return (1) - Error in system calls
-	// return (0) - Fine
-}
-
-int		main(int argc, char* argv){
-	if (argc != 2){
-		write(2, "Wrong number of arguments\n", 27);
-		return 1;
-	}
-	if (ft_prepare()){
-		write(2, "Fatal error\n", 13);
-		return 1;
-	}
-}
-
 #include <string.h>
+#include <stdio.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
